@@ -38,10 +38,8 @@ Assure-toi d'avoir les outils suivants installés sur ta machine :
    Ouvre une fenêtre de terminal et exécute la commande suivante pour cloner le dépôt depuis GitHub :
 
    ```bash
-   git clone <lien-du-depot>
+   git clone https://github.com/aqarbal/exam-framework-jee-vaccination-center-app.git
    ```
-
-   Remplace `<lien-du-depot>` par le lien réel de ton dépôt.
 
 2. **Ouvre le Projet dans ton IDE :**
 
