@@ -47,14 +47,14 @@ Assure-toi d'avoir les outils suivants installés sur ta machine :
 
 3. **Exécute l'Application :**
 
-   Cherche la classe principale de l'application (généralement annotée avec `@SpringBootApplication`) et exécute-la en tant qu'application Java.
+   Cherche la classe ExamFrameworkJeeApplication et exécute-la en tant qu'application Java.
 
 4. **Accède à l'Application :**
 
-   L'application sera disponible à l'adresse [http://localhost:8080/vaccination](http://localhost:8080). Ouvre ton navigateur web et accède à cette URL.
+   L'application sera disponible à l'adresse [http://localhost:8080/vaccination](http://localhost:8080/). Ouvre ton navigateur web et accède à cette URL.
 
    ```plaintext
-   http://localhost:8080/vaccination
+   http://localhost:8080/vaccination/
    ```
    
 ## Fonctionnalités
