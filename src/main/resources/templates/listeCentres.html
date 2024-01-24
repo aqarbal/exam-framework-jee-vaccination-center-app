@@ -1,0 +1,34 @@
+<!-- src/main/resources/templates/listeCentres.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des Centres de Vaccination</title>
+  <!-- Lien vers Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+<div th:replace="fragments/navbar"></div>
+
+<div class="container mt-4">
+  <h2>Liste des Centres de Vaccination</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Adresse</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="centre : ${centres}">
+      <td th:text="${centre.nom}"></td>
+      <td th:text="${centre.adresse}"></td>
+      <td><a th:href="@{'/vaccination/afficherCentre/' + ${centre.id}}" class="btn btn-primary">Voir Détails</a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
